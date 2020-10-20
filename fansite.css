@@ -22,6 +22,14 @@ html {
   justify-content: space-evenly;
 }
 /* IMAGE */
+.d_img img{
+  border-radius: 50%;
+  border:2px solid white;
+}
+.d_img img:hover{
+  border-radius: 50%;
+  border:2px solid white;
+}
 .img_size {
   width: 20%;
   padding: 5px;
