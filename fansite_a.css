@@ -1,0 +1,135 @@
+body,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+/* EFFETS */
+.cadre{
+  border: 5px solid white;
+  border-style: double;
+  margin: 0 20px;
+}
+/* TITRE */
+.title
+{
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: rgb(245, 255, 199);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* TEXTE */
+.p_format{
+  
+  line-height: 1.4em;
+  text-align: justify;
+  padding: 10px;
+  
+}
+
+/* FLOAT */
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+/* FLEX */
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* LIEN ANCRE */
+#ancre a{
+  font-size: .8em;
+  text-decoration: none;
+  color: white;
+
+}
+/* IMAGE */
+
+/* IMAGE ANCRE */
+.d_img {
+  margin: auto;
+}
+.d_img img {
+  width: 10vw;
+  border-radius: 50%;
+}
+
+.d_img img:hover {
+  transform: scale(1.3) ;
+  transition: 3s;
+}
+/* IMAGE ARTICLE */
+#img_sc2
+{
+  margin: auto;
+}
+.img_size {
+  width: 30vw;
+  padding: 5px;
+}
+/* IMAGE PRES CLASSE */
+.img_resize {
+  width: 15vw;
+}
+/* VIDEO */
+#sc_movie{
+  margin: 30px auto;
+}
+/* ARTICLE */
+.article {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background: center fixed url(img/background.01.jpg);
+  background-size: cover;
+  color: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 50px;
+  border: 5px solid rgb(245, 255, 199);
+  box-shadow: 5px 5px 20px rgb(243, 243, 243);
+}
+.article h3 {
+  text-align: center;
+}
+/* PRESENTATION CLASSE */
+.cls_wow {
+  width: 48%;
+  height: 230px;
+  margin: 5px 5px;
+  font-size: .8em;
+}
+.cls_wow h4{
+  margin: .5em;
+  text-align: center;
+}
+/* EFFET HOVER WOW CLASSE */
+.cls_wow:hover{
+  border:5px solid rgb(245, 255, 199) ;
+  border-style: double;
+  box-shadow: 0px 0px 10px white;
+}
+.cls_wow:hover h4{
+ color: white;
+}
+
+/* FOOTER */
+.footer {
+  height: 150px;
+  margin: 30px 0 0 0;
+  background: lightcyan;
+}
