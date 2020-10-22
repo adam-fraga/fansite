@@ -1,0 +1,232 @@
+:root {
+    --prim-clr: black;
+    --sec-clr: white;
+    --ter-clr: #011937;
+    --nav-size: 80px;
+    --gradient4: linear-gradient(83deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.8225665266106442) 52%, rgba(255,255,255,0.9009978991596639) 100%);
+}
+/* ========== FONTS============ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* ========== GENERIC ========== */
+h1 {
+    color: var(--sec-clr);
+    font-family: 'Poppins', sans-serif;
+
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.centered {
+    margin: 0px auto;
+}
+/* ======== HEADER ========== */
+body {
+    margin: 0;
+}
+main {
+    color: var(--sec-clr);
+    padding-top: 100px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    align-items: center;
+    background-image: url(img/link-banner-bkg.png);
+    display: flex;
+    height: var(--nav-size);
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.banner {
+    height: 350px;
+    position: relative;
+    top: var(--nav-size);
+}
+nav a {
+    background-image: var(--gradient4);
+    background-size: 400%;
+    background-position: left;
+    border: 2px solid var(--sec-clr);
+    color: var(--sec-clr);
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    margin-left:20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color, 600ms, background-position 800ms;
+}
+nav a:hover {
+    color: var(--ter-clr);
+    background-position: right;
+}
+.a:visited, a:link {
+    text-decoration: none;
+}
+/* ========= BANNERS============ */
+.fansite6 .banner {
+    position: relative;
+    top: var(--nav-size);
+    height: 350px;
+    background: center no-repeat url(img/header-global.png),url(img/background-header.jpg);
+    background-size: cover;
+}
+.fansite5 .banner {
+    position: relative;
+    top: var(--nav-size);
+    height: 350px;
+    background: center no-repeat url(img/blizzcon-header.png),url(img/background-header.jpg);
+    background-size: cover;
+}
+/* ======== FANSITE6 =========== */
+.fansite6 .contact {
+    margin: 50px auto;
+    margin-top: 200px;
+    width: 600px;
+}
+.fansite6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.fansite6 td img {
+    height: 100px;
+}
+.fansite6 table, th, td {
+    border: 2px solid var(--sec-clr);
+}
+.fansite6 table {
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+.fansite6 h1 {
+    text-transform: uppercase;
+}
+.fansite6 .comm h1, p {
+    text-align: center;
+    margin: 30px auto;
+}
+.comm p {
+    margin-top: 40px;
+}
+th {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+.fansite6 table td {
+    font-family: 'Open Sans', sans-serif;
+
+    padding: 10px 20px ;
+    font-size: large;
+}
+.fansite6 table td a{
+    padding-left: 10px 15px ;
+}
+.fansite6 fieldset {
+    margin: 50px auto;
+    width: 500px;
+}
+.fansite6 fieldset label {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 200px;
+}
+.fansite6 main {
+    background: center no-repeat url(img/background-char-blue.2.2.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* ========= FANSITE 5 ======== */
+.fansite5 main{
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background: center no-repeat url(img/background-char-blue.2.2.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fansite5 h1 {
+    color: var(--sec-clr);
+}
+.fansite5 .intro {
+    margin-top:100px;
+}
+.fansite5  h1 {
+    margin-left: 20%;
+}
+.fansite5 p {
+    margin-left: 5%;
+    margin-right: 3%;
+}
+/* .h1-blizzcon-g {
+    color: var(--prim-clr);
+} */
+.body-blizzcon section img {
+    border-radius: 5px;
+}
+.body-blizzcon figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: small;
+}
+.name, aside .title-aside {
+    font-style: italic;
+}
+.body-blizzcon .demoing p{
+    padding-top: 50px;
+}
+.icons {
+    align-items: center;
+    margin: 25px 0;
+}
+.icons img {
+    width: 50px;
+}
+
+.comingn-ext {
+    background: center no-repeat url(img/banner-comingnext.png);
+    background-size: contain;
+}
+
+.intro-coming-next {
+    margin-top: 100px;
+    height: 100px;
+    /* background: violet; */
+}
+.intro-coming-next p {
+    width: 60%;
+}
+iframe {
+    display: flex;
+    justify-content: center;
+    margin: 15px 10px;
+}
+aside {
+    width: 20%;
+    padding: 5px 10px;
+    border: 3px solid var(--prim-clr);
+    float: right;
+}
+.info {
+    width: 70%;
+    /* background: sienna; */
+}
+aside h4, aside p {
+    margin: 5px 8px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align: center;
+}
