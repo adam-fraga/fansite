@@ -5,30 +5,59 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 /* EFFETS */
-.cadre{
-  border: 5px solid white;
-  border-style: double;
-  margin: 0 20px;
+.cadre {
+  border: 1px solid white;
+  box-shadow: -10px 10px 20px rgb(0, 0, 0);
 }
 /* TITRE */
-.title
-{
+.title_imp {
   text-align: center;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  color: rgb(245, 255, 199);
+  color: #00a0ec;
   font-weight: bold;
   font-size: 2em;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
 }
-
+.title_inf {
+  margin: 30px 10px;
+  color: #00a0ec;
+  text-shadow: 1px 1px 2px black;
+}
+.title_shadow
+{
+  filter: drop-shadow( 0px 0px 20px  rgb(0, 233, 250));
+}
 /* TEXTE */
-.p_format{
-  
+.p_format {
   line-height: 1.4em;
   text-align: justify;
   padding: 10px;
-  
+  text-indent: 1rem;
 }
 
+.p_format_bigger {
+  margin: 10px;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  text-align: justify;
+  padding: 20px;
+  text-indent: 1rem;
+}
+.p_center {
+  line-height: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
+
+.scroll{
+  overflow: scroll;
+}
+
+/* TEXT CARTE ACTU */
+.text_actu {
+  padding: 10px;
+}
 /* FLOAT */
 .float_left {
   float: left;
@@ -50,12 +79,24 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+.center {
+  display: flex;
+  align-items: center;
+}
+.space{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* MAIN */
+.main {
+  background: center fixed no-repeat url(/img_actu/background-char-blue.2.2.png);
+  background-size: cover;
+}
 /* LIEN ANCRE */
-#ancre a{
-  font-size: .8em;
+#ancre a {
+  font-size: 0.8em;
   text-decoration: none;
   color: white;
-
 }
 /* IMAGE */
 
@@ -67,69 +108,132 @@ html {
   width: 10vw;
   border-radius: 50%;
 }
-
 .d_img img:hover {
-  transform: scale(1.3) ;
+  transform: scale(1.3);
   transition: 3s;
 }
-/* IMAGE ARTICLE */
-#img_sc2
-{
+.pic_pres_wow {
+  margin: 10px 20px;
+}
+/* IMAGE FANSITE3 (SERIE PHARE) */
+#img_sc2 {
   margin: auto;
 }
 .img_size {
   width: 30vw;
   padding: 5px;
 }
-/* IMAGE PRES CLASSE */
 .img_resize {
-  width: 15vw;
+  width: 230px;
 }
+
+.img_size_zt {
+  width: 20vw;
+  margin: 10px 20px;
+}
+#toss {
+  width: 13vw;
+  margin: 10px 20px;
+}
+.pic_diab{
+  margin: 10px 20px;
+}
+/* IMAGE ACTUALITE FANSITE 2 */
+.actu_pix {
+  width: 25vw;
+}
+/* IMAGES RESEAUX */
+.pic_reseaux{
+  width: 20%;
+  filter: drop-shadow(10px 10px 5px rgb(0, 0, 0));
+  opacity: .5;
+}
+.pic_reseaux:hover{
+  filter: drop-shadow(2px 2px 10px white);
+  opacity: 1;
+  transition: .5s;
+}
+#pic_fb{
+  width: 70%;
+  filter: drop-shadow(10px 10px 5px rgb(0, 0, 0));
+  opacity: .5;
+}
+#pic_fb:hover{
+  filter: drop-shadow(2px 2px 10px white);
+  opacity: 1;
+  transition: .5s;
+}
+
 /* VIDEO */
-#sc_movie{
+#sc_movie {
   margin: 30px auto;
 }
 /* ARTICLE */
 .article {
   width: 80%;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 20px;
   background: center fixed url(img/background.01.jpg);
   background-size: cover;
   color: white;
   width: 80%;
-  margin: 20px auto;
-  padding: 50px;
-  border: 5px solid rgb(245, 255, 199);
-  box-shadow: 5px 5px 20px rgb(243, 243, 243);
 }
-.article h3 {
-  text-align: center;
-}
-/* PRESENTATION CLASSE */
+/* PRESENTATION  WOW FANSITE3*/
+
 .cls_wow {
   width: 48%;
   height: 230px;
   margin: 5px 5px;
-  font-size: .8em;
+  font-size: .95em;
 }
-.cls_wow h4{
-  margin: .5em;
+.cls_wow h3 {
+  margin: 0.5em;
   text-align: center;
 }
-/* EFFET HOVER WOW CLASSE */
-.cls_wow:hover{
-  border:5px solid rgb(245, 255, 199) ;
-  border-style: double;
-  box-shadow: 0px 0px 10px white;
+.cls_wow:hover {
+  border: 2px solid #00a0ec;
+  box-shadow: 1px 1px 5px white;
 }
-.cls_wow:hover h4{
- color: white;
+.cls_wow:hover h3 {
+  color: white;
 }
+/* CARD ACTUALITE FANSITE 2 */
+.actu_card {
+  width: 70%;
+  padding: 5px;
+  margin: 0 auto;
+}
+.actu_card:hover {
+  border: 1px solid #00a0ec;
+  transform: translateX(-20px);
+}
+.actu_card:hover h3 {
+  color: white;
+}
+
+.date_actu {
+  margin-left: 10px;
+  color: rgb(0, 233, 250);
+}
+
 
 /* FOOTER */
 .footer {
-  height: 150px;
+  background:center  no-repeat url(img_actu/footer-jaina.jpg);
+  background-size: cover;
   margin: 30px 0 0 0;
-  background: lightcyan;
+  height: 400px;
+}
+.foot_menu a{
+  margin: 50px auto;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  opacity: .7;
+}
+.foot_menu a:hover{
+  color: white;
+  opacity: 1;
+  text-shadow: 5px 5px 10px rgb(0, 233, 250);
+  transition: .5s;
 }
