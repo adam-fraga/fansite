@@ -5,16 +5,9 @@
     --nav-size: 80px;
     --gradient4: linear-gradient(83deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.8225665266106442) 52%, rgba(255,255,255,0.9009978991596639) 100%);
 }
-/* ========== FONTS============ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-/* ========== GENERIC ========== */
-h1 {
-    color: var(--sec-clr);
-    font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Open+Sans&family=Poppins&display=swap');/* ========== GENERIC ========== */
 
-}
 .col {
     display: flex;
     flex-direction: column;
@@ -27,11 +20,18 @@ h1 {
 .centered {
     margin: 0px auto;
 }
+a:link:active, a:visited:active, a:link {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.name, aside .title-aside {
+    font-style: italic;
+}
 /* ======== HEADER ========== */
-body {
+.fansite body, .fansite4 body, .fansite5 body, .fansite body  {
     margin: 0;
 }
-main {
+.fansite main, .fansite4 main, .fansite5 main, .fansite6 main {
     color: var(--sec-clr);
     padding-top: 100px;
 }
@@ -66,21 +66,21 @@ nav a {
     padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color, 600ms, background-position 800ms;
-}
-nav a:hover {
-    color: var(--ter-clr);
-    background-position: right;
-}
-.a:visited, a:link {
-    text-decoration: none;
+    /* transition: color, 600ms, background-position 800ms; */
 }
 /* ========= BANNERS============ */
-.fansite6 .banner {
+.fansite .banner {
     position: relative;
     top: var(--nav-size);
     height: 350px;
     background: center no-repeat url(img/header-global.png),url(img/background-header.jpg);
+    background-size: contain;
+}
+.fansite4 .banner {
+    position: relative;
+    top: var(--nav-size);
+    height: 350px;
+    background: center no-repeat url(img/header-diablo4.png),url(img/background-header.jpg);
     background-size: cover;
 }
 .fansite5 .banner {
@@ -90,15 +90,25 @@ nav a:hover {
     background: center no-repeat url(img/blizzcon-header.png),url(img/background-header.jpg);
     background-size: cover;
 }
+.fansite6 .banner {
+    position: relative;
+    top: var(--nav-size);
+    height: 350px;
+    background: center no-repeat url(img/header-wow.png),url(img/background-header.jpg);
+    background-size: cover;
+}
 /* ======== FANSITE6 =========== */
+.fansite6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.fansite6 a:visited {
+    color: cornflowerblue;
+}
 .fansite6 .contact {
     margin: 50px auto;
     margin-top: 200px;
     width: 600px;
-}
-.fansite6 {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 .fansite6 td img {
     height: 100px;
@@ -120,7 +130,7 @@ nav a:hover {
 .comm p {
     margin-top: 40px;
 }
-th {
+.fansite6 th {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-size: 30px;
@@ -131,9 +141,6 @@ th {
 
     padding: 10px 20px ;
     font-size: large;
-}
-.fansite6 table td a{
-    padding-left: 10px 15px ;
 }
 .fansite6 fieldset {
     margin: 50px auto;
@@ -149,14 +156,24 @@ th {
     background-size: cover;
     background-attachment: fixed;
 }
+
 /* ========= FANSITE 5 ======== */
-.fansite5 main{
-    font-size: 1.1em;
+.fansite5 {
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
+    /* background: center no-repeat url(img/background-char-blue.2.2.png);
+    background-size: cover;
+    background-attachment: fixed; */
+}
+.fansite5 a:visited {
+    color: cornflowerblue;
+}
+.fansite5 main {
     background: center no-repeat url(img/background-char-blue.2.2.png);
     background-size: cover;
     background-attachment: fixed;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 .fansite5 h1 {
     color: var(--sec-clr);
@@ -164,69 +181,105 @@ th {
 .fansite5 .intro {
     margin-top:100px;
 }
-.fansite5  h1 {
+.fansite5 h1 {
     margin-left: 20%;
 }
 .fansite5 p {
     margin-left: 5%;
     margin-right: 3%;
 }
-/* .h1-blizzcon-g {
-    color: var(--prim-clr);
-} */
-.body-blizzcon section img {
+.fansite5 section img {
     border-radius: 5px;
 }
-.body-blizzcon figcaption {
+figcaption {
     margin-top: 5px;
     font-style: italic;
     font-size: small;
 }
-.name, aside .title-aside {
-    font-style: italic;
-}
-.body-blizzcon .demoing p{
+.fansite5 .demoing p{
     padding-top: 50px;
 }
-.icons {
-    align-items: center;
-    margin: 25px 0;
-}
-.icons img {
-    width: 50px;
-}
 
-.comingn-ext {
-    background: center no-repeat url(img/banner-comingnext.png);
-    background-size: contain;
+/* ============ FANSITE 4 ========= */
+.fansite4 {
+    margin: 0;
 }
-
-.intro-coming-next {
-    margin-top: 100px;
-    height: 100px;
-    /* background: violet; */
+.fansite4 main {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    background: center no-repeat url(img/background-char-blue.2.2.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
-.intro-coming-next p {
-    width: 60%;
+.fansite4 .title {
+    padding-left: 25%;
+    /* text-align: center; */
+}
+.fansite4 .intro {
+    padding: 15px;
+    padding-left: 10px;
+    /* height: 100px; */
+}
+.fansite4 aside {
+    font-size: 18px;
+}
+.fansite4 .title {
+    font-family: 'Poppins', sans-serif;
+}
+.fansite4 h2 {
+    text-align: center;
 }
 iframe {
     display: flex;
     justify-content: center;
     margin: 15px 10px;
 }
-aside {
+.fansite4 section {
+    margin-bottom: 50px;
+}
+.fansite4 aside {
     width: 20%;
     padding: 5px 10px;
-    border: 3px solid var(--prim-clr);
+    border: 3px solid var(--sec-clr);
     float: right;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align: center;
 }
 .info {
     width: 70%;
-    /* background: sienna; */
 }
 aside h4, aside p {
     margin: 5px 8px;
     text-align: justify;
     text-justify: inter-word;
     text-align: center;
+}
+.fansite4 a:visited {
+    color: cornflowerblue;
+}
+/* =========== FANSITE 1 ========== */
+.fansite {
+    margin: 0;
+    color: var(--sec-clr);
+    text-align: center;
+}
+.fansite main {
+    background: url(img/background-char-blue.2.2.png);
+}
+.fansite h1 {
+    text-transform: uppercase;
+    font-family: 'Jockey One', sans-serif;
+}
+.fansite p {
+    font-size: 22px;
+    padding: 20px 40px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.fansite a:visited {
+    color: cornflowerblue;
 }
