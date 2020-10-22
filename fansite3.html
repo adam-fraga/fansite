@@ -4,55 +4,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fansite_a.css" />
+    <link rel="stylesheet" href="fansite.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav">
         <a href="fansite.html">Accueil</a>
         <a href="fansite2.html">Actualités</a>
         <a href="fansite3.html">Séries phares</a>
         <a href="fansite4.html">Coming next</a>
         <a href="fansite5.html">BlizzCon</a>
         <a href="fansite6.html">Les autres communautés</a>
-        <a href="partie du fansite6">Nous contacter</a>
+        <a href="fansite6.html#fansite6-contact">Nous contacter</a>
+        <a href="#footer">Réseaux sociaux</a>
       </nav>
-      <div class="banner-acc"></div>
+      <div class="banner_wow"></div>
     </header>
 
     <main class="main col">
       <section>
         <!-- PRESENTATION PAGE -->
         <article class="cadre col article">
-          <h2 class=" title_imp">Les Séries phare de la Firme!</h2>
+          <h2 class="title_imp">Les Séries phare de la Firme!</h2>
           <p class="p_center p_format_bigger">
             Blizzard, célèbre studio de développement qu'on ne présente plus
             aujourd'hui dénombre parmis ses nombreuses productions trois series
-            phare. Nous allons donc revenir sur chacune d'elles et tâcher de vous
-            partager notre attrait pour ce studio de production.
+            phare. Nous allons donc revenir sur chacune d'elles et tâcher de
+            vous partager notre attrait pour ce studio de production.
           </p>
           <br />
           <br />
-                  <!-- VIGNETTE LIEN D'ANCRE -->
-        <div id="image_box" class="row">
-          <div class="d_img">
-            <a href="#starcraft"
-              ><img src="img/logo-sc2-6e33583ba0547b6a.png" alt=""
-            /></a>
+          <!-- VIGNETTE LIEN D'ANCRE -->
+          <div id="image_box" class="row">
+            <div class="d_img">
+              <a href="#starcraft"
+                ><img src="img/logo-sc2-6e33583ba0547b6a.png" alt=""
+              /></a>
+            </div>
+            <div class="d_img">
+              <a href="#wow"
+                ><img src="img/logo-wow-3dd2cfe06df74407.png" alt="wow_image"
+              /></a>
+            </div>
+            <div class="d_img">
+              <a href="#diablo"
+                ><img src="img/logo-d3-ab08e4045fed09ee.png" alt=""
+              /></a>
+            </div>
           </div>
-          <div class="d_img">
-            <a href="#wow"
-              ><img src="img/logo-wow-3dd2cfe06df74407.png" alt="wow_image"
-            /></a>
-          </div>
-          <div class="d_img">
-            <a href="#diablo"
-              ><img src="img/logo-d3-ab08e4045fed09ee.png" alt=""
-            /></a>
-          </div>
-        </div>
-         
         </article>
 
         <!-- PRESENTATION WOW -->
@@ -60,7 +60,11 @@
           <article id="wow" class="cadre col article">
             <h3 class="title_imp">World of warcraft</h3>
             <p class="p_format_bigger">
-              <img class="pic_pres_wow float_left cadre" src="img/wow_pic.jpg" alt="" />
+              <img
+                class="pic_pres_wow float_left cadre"
+                src="img/wow_pic.jpg"
+                alt=""
+              />
               World of Warcraft ce déroule dans le monde d'Azeroth. L'histoire
               ce passe quatre années après les évènements de Warcraft III : The
               Frozen Throne. Le joueur choisit son personnage d'abord parmi deux
@@ -76,7 +80,7 @@
 
             <p class="p_format_bigger">
               <iframe
-                class=" pic_pres_wow float_right cadre"
+                class="pic_pres_wow float_right cadre"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/QInBVzBJuU4"
@@ -101,7 +105,7 @@
           <!-- PRSENTATION CLASSES WOW -->
           <article class="cadre col article">
             <h3 class="title_imp">Présentation des classes</h3>
-            <p class="p_format_bigger p_center" >
+            <p class="p_format_bigger p_center">
               Chevalier en armure de plaques étincelante ou lanceur de sorts en
               robe aux couleurs bigarrées ? Le choix est vaste dans World of
               Warcraft ! Chaque classe pose un défi différent et répond à des
@@ -113,14 +117,14 @@
                 <div><img class="img_resize"" src="img/wawa.jpg" alt=""></div>
                 <div>
                   <h3 class="title_inf">Guerrier</h3>
-                  <p class=" p_format">
-                    
+                  <p class="p_format">
                     Les guerriers s’équipent avec précaution pour le combat, et
                     n’hésitent pas à engager le combat la tête la première tel
                     un éclair vêtu d’une armure lourde. Leurs tactiques de
                     combat sont variées et ils peuvent brandir plusieurs types
                     d’armes pour protéger leurs alliés moins versés dans le
                     combat.
+                  </p>
                 </div>
               </div>
               <div class="cadre cls_wow row">
@@ -175,7 +179,7 @@
                     sorts offensifs, mais ils sont fragiles et ne portent que
                     des vêtements en guise d’armure ; c’est pourquoi ils doivent
                     faire attention à ne pas se laisser submerger par leurs
-                    adversaires. 
+                    adversaires.
                   </p>
                 </div>
               </div>
@@ -266,7 +270,7 @@
                 </div>
               </div>
               <div class="cadre cls_wow row">
-                <div><img class="img_resize" src="img/DK.jpg" alt=""></div>
+                <div><img class="img_resize" src="img/DK.jpg" alt="" /></div>
                 <div>
                   <h3 class="title_inf">Chevalier de la mort</h3>
                   <p class="p_format">
@@ -275,7 +279,7 @@
                     coups de leur arme pour le rendre plus vulnérable ou le
                     blesser par leur puissance impie. Ils entraînent leur cible
                     dans un duel sans merci, la forçant à se concentrer sur lui
-                    loin de ses plus faibles compagnons. 
+                    loin de ses plus faibles compagnons.
                   </p>
                 </div>
               </div>
@@ -285,106 +289,111 @@
           <article id="starcraft" class="cadre col article">
             <h3 class="title_imp">Starcraft II</h3>
             <p class="p_format_bigger p_center">
-             <strong> StarCraft 2: Wings of Liberty</strong> est un jeu vidéo de stratégie en
-              temps réel (STR) développé par Blizzard Entertainment. La première
-              partie du jeu est publiée le 27 juillet 2010 sur PC et Macintosh
-              et fait suite à StarCraft et à son extension StarCraft: Brood War
-              publiés en 19981. StarCraft 2 est divisé en trois parties, le jeu
-              de base sous-titré Wings of Liberty étant complété par deux
-              extensions appelées Heart of the Swarm et Legacy of the Void4. Le
-              jeu prend place au xxvie siècle et relate les affrontements entre
-              trois espèces distinctes pour la domination d’une zone de la voie
-              lactée connue sous le nom de Secteur Koprulu : les Terrans,
-              constitués de descendants de bagnards terriens exilés loin de leur
-              monde natal, les Zergs, une race de créatures modifiées
-              génétiquement et obsédées par l’assimilation des autres espèces de
-              la galaxie, et les Protoss, une race d’humanoïdes qui dispose de
-              technologies et de pouvoirs psioniques très avancés. L’histoire de
-              StarCraft 2: Wings of Liberty se déroule quatre ans après les
-              événements de StarCraft: Brood War. Elle se concentre sur la lutte
-              d’un groupe de rebelles Terrans mené par Jim Raynor qui combat un
-              régime autoritaire, le Dominion. Les deux extensions Heart of the
-              Swarm et Legacy of the Void se concentrent respectivement sur
-              l’histoire des Zergs puis sur celle des Protoss. StarCraft 2
-              connaît rapidement un important succès commercial avec plus de 3
-              millions de copies vendues un mois après sa sortie. En décembre
-              2010, Blizzard Entertainment annonce avoir vendu 4,5 millions de
-              copies depuis la sortie du jeu, Starcraft II est devenu gratuit à
-              partir de novembre 2017.
+              <strong> StarCraft 2: Wings of Liberty</strong> est un jeu vidéo
+              de stratégie en temps réel (STR) développé par Blizzard
+              Entertainment. La première partie du jeu est publiée le 27 juillet
+              2010 sur PC et Macintosh et fait suite à StarCraft et à son
+              extension StarCraft: Brood War publiés en 19981. StarCraft 2 est
+              divisé en trois parties, le jeu de base sous-titré Wings of
+              Liberty étant complété par deux extensions appelées Heart of the
+              Swarm et Legacy of the Void4. Le jeu prend place au xxvie siècle
+              et relate les affrontements entre trois espèces distinctes pour la
+              domination d’une zone de la voie lactée connue sous le nom de
+              Secteur Koprulu : les Terrans, constitués de descendants de
+              bagnards terriens exilés loin de leur monde natal, les Zergs, une
+              race de créatures modifiées génétiquement et obsédées par
+              l’assimilation des autres espèces de la galaxie, et les Protoss,
+              une race d’humanoïdes qui dispose de technologies et de pouvoirs
+              psioniques très avancés. L’histoire de StarCraft 2: Wings of
+              Liberty se déroule quatre ans après les événements de StarCraft:
+              Brood War. Elle se concentre sur la lutte d’un groupe de rebelles
+              Terrans mené par Jim Raynor qui combat un régime autoritaire, le
+              Dominion. Les deux extensions Heart of the Swarm et Legacy of the
+              Void se concentrent respectivement sur l’histoire des Zergs puis
+              sur celle des Protoss. StarCraft 2 connaît rapidement un important
+              succès commercial avec plus de 3 millions de copies vendues un
+              mois après sa sortie. En décembre 2010, Blizzard Entertainment
+              annonce avoir vendu 4,5 millions de copies depuis la sortie du
+              jeu, Starcraft II est devenu gratuit à partir de novembre 2017.
             </p>
-            <img id="img_sc2" src="img_actu/starcraft_PNG68.png" alt="image_sc2" />
+            <img
+              id="img_sc2"
+              src="img_actu/starcraft_PNG68.png"
+              alt="image_sc2"
+            />
 
-
-            <p class="cadre p_format_bigger">
+            <p class="scp p_format_bigger">
               <img
-                class="img_size_zt float_right "
+                class="img_size_zt float_right"
                 src="img_actu/terran_transp.png"
                 alt=""
               />
-              <strong>La race Terran</strong> est celle de la campagne de Wings of Liberty,
-              c'est-à-dire le jeu originel. StarCraft II est un jeu très inspiré
-              de l'univers de Warhammer 40K et l'influence des Space Marines
-              semble avoir été décisive dans les choix de design de la race. Les
-              deux races sont des humains dont les armures hors norme augmentent
-              les capacités, et qui luttent contre tout ce qui n'est pas dans
-              leur camp, humain ou non. Dans l'univers de Starcraft, les Terrans
-              sont les descendants de prisonniers envoyés purger leur peine en
-              exil, au sein du secteur de Koprulu. L'histoire de la campagne de
-              StarCraft I et II montre les combats et les trahisons autour d'un
-              certain nombre de Terran, Jim Raynor, Arcturus Mengsk, Nova, et
-              Sarah Kerrigan. Vous pourrez retrouver de plus grandes parts de
-              l'histoire Terran ici et là ainsi que dans le guide de la campagne
-              de Wings of Liberty.
+              <strong>La race Terran</strong> est celle de la campagne de Wings
+              of Liberty, c'est-à-dire le jeu originel. StarCraft II est un jeu
+              très inspiré de l'univers de Warhammer 40K et l'influence des
+              Space Marines semble avoir été décisive dans les choix de design
+              de la race. Les deux races sont des humains dont les armures hors
+              norme augmentent les capacités, et qui luttent contre tout ce qui
+              n'est pas dans leur camp, humain ou non. Dans l'univers de
+              Starcraft, les Terrans sont les descendants de prisonniers envoyés
+              purger leur peine en exil, au sein du secteur de Koprulu.
+              L'histoire de la campagne de StarCraft I et II montre les combats
+              et les trahisons autour d'un certain nombre de Terran, Jim Raynor,
+              Arcturus Mengsk, Nova, et Sarah Kerrigan. Vous pourrez retrouver
+              de plus grandes parts de l'histoire Terran ici et là ainsi que
+              dans le guide de la campagne de Wings of Liberty.
             </p>
 
-            <p class="cadre p_format_bigger">
+            <p class="scp p_format_bigger">
               <img
-                class=" img_size_zt float_left"
+                class="img_size_zt float_left"
                 src="img_actu/zerg.png"
                 alt=""
               />
-              <strong>Les Zergs </strong>sont l'archétype de l'extra-terrestre méchant. En
-              conséquence, ils ne ressemblent pas vraiment à E.T., mais plutôt
-              au personnage éponyme du film Alien. Inutile de vous faire une
-              photo on peut résumer l'aspect visuel de la race en disant acide,
-              dents, griffes et monstrueux. Les Zergs sont également inspirés de
-              l'univers de Warhammer 40K et de la race Tyrranide. La
-              ressemblance est très impressionnante sur le plan visuel, mais
-              aussi dans la mesure où les créatures les plus puissantes de la
-              race contrôlent les autres au moyen de pouvoirs psychiques. Cette
-              domination est encore plus aboutie chez les Zergs où une créature
-              contrôle toutes les autres. Dans Starcraft I, c'est le
-              Maître-Esprit qui est l'expression de la conscience collective des
-              Zergs. Après avoir été tué par le sacrifice du Protoss Tassadar,
-              il est remplacé par l'humaine qu'il avait transformé en Zerg,
-              Kerrigan. Celle-ci sera le personnage principal de la campagne de
-              l'extension de Starcraft II - Heart of the Swarm.
+              <strong>Les Zergs </strong>sont l'archétype de l'extra-terrestre
+              méchant. En conséquence, ils ne ressemblent pas vraiment à E.T.,
+              mais plutôt au personnage éponyme du film Alien. Inutile de vous
+              faire une photo on peut résumer l'aspect visuel de la race en
+              disant acide, dents, griffes et monstrueux. Les Zergs sont
+              également inspirés de l'univers de Warhammer 40K et de la race
+              Tyrranide. La ressemblance est très impressionnante sur le plan
+              visuel, mais aussi dans la mesure où les créatures les plus
+              puissantes de la race contrôlent les autres au moyen de pouvoirs
+              psychiques. Cette domination est encore plus aboutie chez les
+              Zergs où une créature contrôle toutes les autres. Dans Starcraft
+              I, c'est le Maître-Esprit qui est l'expression de la conscience
+              collective des Zergs. Après avoir été tué par le sacrifice du
+              Protoss Tassadar, il est remplacé par l'humaine qu'il avait
+              transformé en Zerg, Kerrigan. Celle-ci sera le personnage
+              principal de la campagne de l'extension de Starcraft II - Heart of
+              the Swarm.
             </p>
 
-            <p class="cadre p_format_bigger ">
+            <p class="scp p_format_bigger">
               <img
-                id="toss" class="float_right "
+                id="toss"
+                class="float_right"
                 src="img_actu/protoss_transp.png"
                 alt=""
               />
-            <strong> Les Protoss</strong> sont la race sœur des Zergs. Une fratrie ennemie créée
-              par une race plus ancienne et puissante, les Xel'Naga. Il s'agit
-              d'une race très ancienne et aux technologies et pouvoirs
-              psychiques très avancés. Pour refaire un parallèle avec Warhammer
-              40K il s'agirait de la race Eldar. On pourrait également comparer
-              cette race aux martiens dans La guerre des mondes. Les Protoss
-              pilotent en effet de très grosses unités tirant des rayons lasers
-              dévastateurs. Les Protoss sont également quelque peu inspirés de
-              faits historiques puisque une de leurs unités de base est le
-              Zélote, dont le nom vient d'une secte fanatique juive. Dans la
-              campagne de Starcraft I, se trouvent également citées Antioch ou
-              Scion. La race Protoss est partagée en deux groupes : Hauts
-              Templiers et Templier Noirs. Ceux-ci ont suivi des voies
-              divergentes, mais finissent par s'allier afin de sauvegarder leur
-              espèce. Avec le sacrifice de nombre de membres des Hauts
-              Templiers, c'est Zeratul, un des plus importants Templier Noir qui
-              est le protagoniste principal de la race Protoss dans Starcraft
-              II.
+              <strong> Les Protoss</strong> sont la race sœur des Zergs. Une
+              fratrie ennemie créée par une race plus ancienne et puissante, les
+              Xel'Naga. Il s'agit d'une race très ancienne et aux technologies
+              et pouvoirs psychiques très avancés. Pour refaire un parallèle
+              avec Warhammer 40K il s'agirait de la race Eldar. On pourrait
+              également comparer cette race aux martiens dans La guerre des
+              mondes. Les Protoss pilotent en effet de très grosses unités
+              tirant des rayons lasers dévastateurs. Les Protoss sont également
+              quelque peu inspirés de faits historiques puisque une de leurs
+              unités de base est le Zélote, dont le nom vient d'une secte
+              fanatique juive. Dans la campagne de Starcraft I, se trouvent
+              également citées Antioch ou Scion. La race Protoss est partagée en
+              deux groupes : Hauts Templiers et Templier Noirs. Ceux-ci ont
+              suivi des voies divergentes, mais finissent par s'allier afin de
+              sauvegarder leur espèce. Avec le sacrifice de nombre de membres
+              des Hauts Templiers, c'est Zeratul, un des plus importants
+              Templier Noir qui est le protagoniste principal de la race Protoss
+              dans Starcraft II.
             </p>
             <iframe
               id="sc_movie"
@@ -399,33 +408,34 @@
           </article>
           <article class="cadre col article">
             <h3 class="title_imp">Diablo III</h3>
-           
+
             <p class="p_format_bigger">
               <img
-              width="60%"
-              class="cadre pic_diab float_left"
-              src="img/diablo.jpeg"
-              alt="image_diablo"
-            />
-             
+                width="60%"
+                class="cadre pic_diab float_left"
+                src="img/diablo.jpeg"
+                alt="image_diablo"
+              />
+
               Vingt ans se sont écoulés depuis les évènements cataclysmiques de
               Diablo® II. Méphisto, Diablo et Baal ont été vaincus, mais la
               Pierre-Monde qui protégeait autrefois le monde de Sanctuaire des
               forces des Hauts cieux et des Enfers ardents a été détruite, et le
-              Mal s'éveille à nouveau à Tristram... <br> <strong> Diablo  III</strong> est conçu pour
-              devenir le jeu de rôle d'action de référence, et constitue une
-              véritable suite de la série Diablo. Les joueurs choisissent un
-              héros appartenant à l'une des cinq classes distinctes, disposant
-              chacun de toute une gamme de sortilèges et de compétences. Les
-              héros partent ensuite à l'aventure, explorant des lieux riches et
-              variés et découvrant peu à un peu une saga épique, en combattant
-              des hordes de monstres et de « boss » redoutables. Ils gagnent
-              progressivement de l'expérience et des compétences, et s'emparent
-              d'objets d'une puissance incroyable. L'histoire se déroule sur
-              Sanctuaire, un monde sombre et fantastique. À l'insu de la plupart
-              de ses habitants, Sanctuaire a été sauvé des forces démoniaques il
-              y a une vingtaine d'années par quelques braves et courageux héros.
-              La plupart des combattants qui ont affronté directement les armées
+              Mal s'éveille à nouveau à Tristram... <br />
+              <strong> Diablo III</strong> est conçu pour devenir le jeu de rôle
+              d'action de référence, et constitue une véritable suite de la
+              série Diablo. Les joueurs choisissent un héros appartenant à l'une
+              des cinq classes distinctes, disposant chacun de toute une gamme
+              de sortilèges et de compétences. Les héros partent ensuite à
+              l'aventure, explorant des lieux riches et variés et découvrant peu
+              à un peu une saga épique, en combattant des hordes de monstres et
+              de « boss » redoutables. Ils gagnent progressivement de
+              l'expérience et des compétences, et s'emparent d'objets d'une
+              puissance incroyable. L'histoire se déroule sur Sanctuaire, un
+              monde sombre et fantastique. À l'insu de la plupart de ses
+              habitants, Sanctuaire a été sauvé des forces démoniaques il y a
+              une vingtaine d'années par quelques braves et courageux héros. La
+              plupart des combattants qui ont affronté directement les armées
               des Enfers, et qui ont eu la chance de survivre, ont perdu la
               raison. Et la plupart des autres ont enfoui leurs souvenirs hantés
               et chassé ces horreurs de leur esprit. Dans Diablo III, les
@@ -439,7 +449,15 @@
             </p>
 
             <p class="p_format_bigger">
-              <iframe class="pic_diab float_right cadre" width="410px" height="320px" src="https://www.youtube.com/embed/dMJXuyLYUBM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                class="pic_diab float_right cadre"
+                width="410px"
+                height="320px"
+                src="https://www.youtube.com/embed/dMJXuyLYUBM"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
               Un choix de cinq puissantes classes de personnages. Un tout
               nouveau moteur graphique 3D avec des effets visuels spectaculaires
               et un moteur physique Havok. De nombreuses zones en intérieur et
@@ -460,23 +478,46 @@
       </section>
     </main>
     <footer class="cadre footer">
-      <nav class=" row space foot_menu">
-          <a href="#wow">World of warcraft</a>
-          
-          <a href="#stacraft">Starcraft II</a>
-         
-          <a href="#diablo">Diablo III</a>
+      <nav class="row space foot_menu">
+        <a href="#wow">World of warcraft</a>
+
+        <a href="#stacraft">Starcraft II</a>
+
+        <a href="#diablo">Diablo III</a>
       </nav>
 
-<aside><h3 class="title_imp title_shadow">Suivez l'actu Blizzard sur les réseaux!</h3>
-  <div class="row space" >
-      <a href="https://twitter.com/BlizzardCSEU_FR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"> <img src="img/logo-twitter.png" alt="" class="pic_reseaux"></a>
-      <a href="https://www.instagram.com/accounts/login/?next=/blizzard/%3Fhl%3Dfr" target="_blank" rel="noopener noreferrer"><img src="img/logo-insta.png" alt="" class="pic_reseaux"></a>
-      <a href="https://www.youtube.com/user/blizzard" target="_blank" rel="noopener noreferrer"><img src="img/logo-youtube.png" alt="" class="pic_reseaux"></a>
-      <a href="https://fr-fr.facebook.com/Blizzard/" target="_blank" rel="noopener noreferrer"><img src="img/logo-fb.png" alt=""  id="pic_fb"></a>
-  </div>
-  
-</aside>
-  </footer>
+      <aside>
+        <h3 class="title_imp title_shadow">
+          Suivez l'actu Blizzard sur les réseaux!
+        </h3>
+        <div class="row space">
+          <a
+            href="https://twitter.com/BlizzardCSEU_FR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="img/logo-twitter.png" alt="" class="pic_reseaux"
+          /></a>
+          <a
+            href="https://www.instagram.com/accounts/login/?next=/blizzard/%3Fhl%3Dfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="img/logo-insta.png" alt="" class="pic_reseaux"
+          /></a>
+          <a
+            href="https://www.youtube.com/user/blizzard"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="img/logo-youtube.png" alt="" class="pic_reseaux"
+          /></a>
+          <a
+            href="https://fr-fr.facebook.com/Blizzard/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="img/logo-fb.png" alt="" id="pic_fb"
+          /></a>
+        </div>
+      </aside>
+    </footer>
   </body>
 </html>
