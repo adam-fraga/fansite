@@ -68,7 +68,7 @@ html {
 /* FLEX */
 .col {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: space-evenly;
 }
 .row {
